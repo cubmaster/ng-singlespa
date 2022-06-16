@@ -41,7 +41,7 @@
               "node_modules/import-map-overrides/dist/import-map-overrides.js"
             ],
             "customWebpackConfig": {
-              "path": "./extra-webpack.config.js"
+              "path": "./projects/container/extra-webpack.config.js"
             }
           },
           "configurations": {
@@ -218,6 +218,5 @@
         }
       }
     }
-  },
-  "defaultProject": "container"
+  }
 }
