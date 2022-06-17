@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { HelloComponent } from './hello/hello.component';
+import {EmptyRouteComponent} from "./empty-route/empty-route.component";
+const routes: Routes = [
+  {
+    path: 'hello',
+    component: HelloComponent
+  },
+  {
+  path: '**',
+  component: EmptyRouteComponent
+}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
