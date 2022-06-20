@@ -1,5 +1,6 @@
 {
   "imports": {
-    "hello": "http://localhost:4201/main.js"
+    "hello": "https://localhost:4201/remote.js",
+    "systemjs": "/node_modules/systemjs/dist/system.js"
   }
 }
