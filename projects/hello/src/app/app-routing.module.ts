@@ -5,7 +5,7 @@ import {APP_BASE_HREF} from '@angular/common';
 import {EmptyRouteComponent} from "./empty-route/empty-route.component";
 const routes: Routes = [
   {
-    path: 'hello',
+    path: '',
     component: HelloComponent
   },
   {

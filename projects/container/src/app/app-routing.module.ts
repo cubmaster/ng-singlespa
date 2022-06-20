@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [{
-  path: 'hello',
+  path: '',
   children: [{
     path: '**',
     loadChildren: () => import('./spa-host/spa-host.module').then(m => m.SpaHostModule),
