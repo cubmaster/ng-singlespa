@@ -147,8 +147,7 @@
               "path": "projects/hello/extra-webpack.config.js",
               "libraryName": "hello",
               "libraryTarget": "umd"
-            },
-            "deployUrl": "http://localhost:4201/"
+            }
           },
           "configurations": {
             "production": {

@@ -9,6 +9,10 @@ const routes: Routes = [
     component: HelloComponent
   },
   {
+    path: 'hello',
+    component: HelloComponent
+  },
+  {
   path: '**',
   component: EmptyRouteComponent
 }];

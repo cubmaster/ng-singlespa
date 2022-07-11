@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently npm:serve:*",
+    "start": "concurrently npm:serve:nossl:*",
+    "start:ssl": "concurrently npm:serve:ssl:*",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:container": "ng serve --port 4200 -o --project container --live-reload false --disable-host-check --ssl --ssl-key localhost.key --ssl-cert localhost.crt",
-    "serve:hello": "ng serve --port 4201 --project hello --live-reload false --disable-host-check  --ssl --ssl-key localhost.key --ssl-cert localhost.crt"
+    "serve:nossl:container": "ng serve --port 4200 -o --project container --live-reload false --disable-host-check ",
+    "serve:nossl:hello": "ng serve --port 4201 --project hello --live-reload false --disable-host-check --serve-path " ,
+    "serve:ssl:container": "ng serve --port 4200 -o --project container --live-reload false --disable-host-check --ssl --ssl-key localhost.key --ssl-cert localhost.crt --serve-path http://localhost:4200/",
+    "serve:ssl:hello": "ng serve --port 4201 --project hello --live-reload false --disable-host-check  --ssl --ssl-key localhost.key --ssl-cert localhost.crt --serve-path http://localhost:4201/"
   },
   "private": true,
   "dependencies": {

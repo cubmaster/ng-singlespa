@@ -36,7 +36,7 @@ module.exports = (angularWebpackConfig, options) => {
    */
   if (config.mode === "development") {
     config.devServer = {
-      server: 'https',
+      server: 'http',
       allowedHosts: 'all',
       liveReload: false,
       host: devHost,
