@@ -1,5 +1,6 @@
 {
   "imports": {
-    "hello": "http://localhost:4201/remote.js"
+    "hello_http": "http://localhost:4201/remote.js",
+    "hello_https": "https://localhost:4201/remote.js"
   }
 }

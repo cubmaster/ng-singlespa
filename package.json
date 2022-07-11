@@ -10,8 +10,8 @@
     "test": "ng test",
     "serve:nossl:container": "ng serve --port 4200 -o --project container --live-reload false --disable-host-check ",
     "serve:nossl:hello": "ng serve --port 4201 --project hello --live-reload false --disable-host-check --serve-path " ,
-    "serve:ssl:container": "ng serve --port 4200 -o --project container --live-reload false --disable-host-check --ssl --ssl-key localhost.key --ssl-cert localhost.crt --serve-path http://localhost:4200/",
-    "serve:ssl:hello": "ng serve --port 4201 --project hello --live-reload false --disable-host-check  --ssl --ssl-key localhost.key --ssl-cert localhost.crt --serve-path http://localhost:4201/"
+    "serve:ssl:container": "ng serve --port 4200 -o --project container --live-reload false --disable-host-check --ssl --ssl-key localhost.key --ssl-cert localhost.crt ",
+    "serve:ssl:hello": "ng serve --port 4201 --project hello --live-reload false --disable-host-check  --ssl --ssl-key localhost.key --ssl-cert localhost.crt "
   },
   "private": true,
   "dependencies": {

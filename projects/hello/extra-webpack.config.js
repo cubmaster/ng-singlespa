@@ -3,7 +3,8 @@ const singleSpaAngularWebpack = require("single-spa-angular/lib/webpack")
 const path = require("path");
 const devHost = "localhost";
 const devPort = 4201;
-const devUrl = `http://${devHost}:${devPort}`;
+const scheme = "http";  //Change to HTTPS when running in ssl
+const devUrl = `${scheme}://${devHost}:${devPort}`;
 module.exports = (angularWebpackConfig, options) => {
   const singleSpaWebpackConfig = singleSpaAngularWebpack(
     angularWebpackConfig,
@@ -36,7 +37,7 @@ module.exports = (angularWebpackConfig, options) => {
    */
   if (config.mode === "development") {
     config.devServer = {
-      server: 'http',
+      server: scheme,
       allowedHosts: 'all',
       liveReload: false,
       host: devHost,
